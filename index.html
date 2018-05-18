@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Watching ISS</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<div class="position">
+				<p>ISS is now located at:</p>
+				<p class="crd">Longitude: <span class="lng"></span>, Latitude: <span class="lat"></span></p>
+			</div>
+			<div id="map"></div>
+		</div>
+		<div class="right">
+			<div class="date">
+				
+			</div>
+			<ul class="astros"></ul>
+			<div class="amount"></div>
+		</div>
+	</div>
+	
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ-zsrH7KJi6vzl6c3mQ7k9Pwb49e4Hvg&callback=getPosition">
+</script>
+</body>
+</html>
